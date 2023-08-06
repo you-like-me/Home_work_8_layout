@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    width: 1600px;
+    height: 75px;
+    fill: #222;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 50px;
+}
+
+.Menu {
+    fill: #222;
+    background: #222222;
+    display: flex;
+    flex-direction: row;
+    gap: 70%;
+    justify-content: center;  
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    align-items: flex-end;
+    gap: 50%;
+}
+
+.right {
+    display: flex;
+    align-self: center;
+}
+
+.Top {
+    fill: #F1E4E6;
+    background: #F1E4E6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+}
+
+h1 {
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    width: 25%;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+span1 {
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+span2 {
+    color: #F16D7F;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: start;
+}
+
+.Offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 10px;
+    justify-items: stretch;
+    width: 80%;
+    background: #F1E4E6;
+}
+
+.block {
+    display: grid;
+    fill: rgba(33, 22, 22, 0.70);
+    background-color: #211616B2;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-items: stretch;
+}
+
+.large_block {
+    display: grid;
+    grid-column: span 3;
+    fill: rgba(33, 22, 22, 0.70);
+    background-color: #211616B2;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-items: stretch;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    background: #F1E4E6;
+}
+
+h2 {
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.Products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 10px;
+    justify-items: stretch;
+    width: 80%;
+    background: #F1E4E6;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.product2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    justify-content: flex-end;
+}
+
+.name {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: start;
+}
+
+.specifications {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.Button {
+    background: #FFF;
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F1E4E6;
+    outline-color: #F26376;
+    outline-style: auto;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        align-items: center;
+        fill: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 50%;
+        background: #F1E4E6;
+        gap: 20%;
+    }
+    
+    .Menu {
+        fill: #222;
+        background: #222222;
+        display: flex;
+        flex-direction: row;
+        gap: 42%;
+        justify-content: start;
+    }
+    
+    img {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .left {
+        display: flex;
+        align-items: flex-end;
+        gap: 50%;
+        justify-content: start;
+    }
+    
+    .right {
+        display: flex;
+        align-self: center;
+        justify-content: end;
+    }
+    
+    .Top {
+        fill: #F1E4E6;
+        background: #F1E4E6;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+   
+    h1 {
+        color: #222;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        display: flex;
+        align-content: stretch;
+        justify-content: space-between;
+    }
+    
+    span1 {
+        color: #222;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    span2 {
+        color: #F16D7F;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        align-self: start;
+    }
+    
+    .Offer {
+        display: grid;
+        grid-template-columns: repeat(3, 128px);
+        gap: 20px 10px;
+        background: #F1E4E6;
+        align-self: start;
+    }
+    
+    .block {
+        display: grid;
+        fill: rgba(33, 22, 22, 0.70);
+        background-color: #211616B2;
+        color: #FFF;
+        text-align: center;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-self: normal;
+        justify-self: auto;
+    }
+    
+    .large_block {
+        display: grid;
+        grid-column: span 3;
+        fill: rgba(33, 22, 22, 0.70);
+        background-color: #211616B2;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-items: stretch;
+    }
+    
+    .Text {
+        background: #F1E4E6;
+        width: 70%;
+        align-items: center;
+    }
+    
+    h2 {
+        color: #222;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+    }
+    
+    p {
+        color: #9F9F9F;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+    }
+    
+    .Products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 10px;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        background: #F1E4E6;
+    }
+    
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+    }
+    
+    .product2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        justify-content: flex-end;
+    }
+    
+    .vertical {
+        width: 41%;
+    }
+
+    .name {
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-self: start;
+    }
+    
+    .specifications {
+        color: #5D5D5D;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    .Button {
+        background: #FFF;
+        color: #F26376;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 212px;
+        height: 48px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F1E4E6;
+        outline-color: #F26376;
+        outline-style: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+body {
+    align-items: stretch;
+    fill: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: #F1E4E6;
+}
+
+.Menu {
+    fill: #222;
+    background: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: start;
+    align-content: flex-start;
+    color: white;
+    width: 90%;
+}
+
+.Top {
+    fill: #F1E4E6;
+    background: #F1E4E6;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    gap: 3%;
+    flex-direction: row;
+}
+
+h1 {
+    color: #222;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: flex;
+    gap: 3%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: max-content;
+}
+
+span1 {
+    color: #222;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+span2 {
+    color: #F16D7F;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Offer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 400px;
+    gap: 20px 10px;
+    justify-items: stretch;
+    width: 90%;
+    background: #F1E4E6;
+    justify-items: center;
+}
+
+.block_1 {
+    display: grid;
+    fill: rgba(33, 22, 22, 0.70);
+    background-color: #211616B2;
+    color: #FFF;
+    text-align: center;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    align-content: center;
+    justify-items: stretch;
+}
+
+.block_2 {
+    display: grid;
+    fill: rgba(33, 22, 22, 0.70);
+    background-color: #211616B2;
+    color: #FFF;
+    text-align: center;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-items: stretch;
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    align-content: center;
+    justify-items: stretch;
+}
+
+.block_3 {
+    display: grid;
+    fill: rgba(33, 22, 22, 0.70);
+    background-color: #211616B2;
+    color: #FFF;
+    text-align: center;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-items: stretch;
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    align-content: center;
+    justify-items: stretch;
+}
+
+.large_block {
+    display: grid;
+    fill: rgba(33, 22, 22, 0.70);
+    background-color: #211616B2;
+    color: #FFF;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-items: stretch;
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    align-self: start;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    background: #F1E4E6;
+    align-self: stretch;
+    align-items: stretch;
+    width: 70%;
+}
+
+h2 {
+    color: #222;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+p {
+    color: #9F9F9F;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+}
+
+.Products {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 40px 10px;
+    background: #F1E4E6;
+    align-self: center;
+    align-items: center;
+    width: max-content;
+}
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+}
+
+.product2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    justify-content: flex-end;
+    justify-self: stretch;
+}
+
+.name {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: start;
+}
+
+.specifications {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-self: start;
+}
+
+.Button {
+    background: #FFF;
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    background: #F1E4E6;
+    outline-color: #F26376;
+    outline-style: auto;
+    width: max-content;
+    align-self: center;
+}
+}
